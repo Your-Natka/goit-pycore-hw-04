@@ -1,6 +1,6 @@
 import sys
-from parser import parse_input
-from commands import execute_command
+from .parser import parse_input
+from .commands import execute_command
 
 
 def main(directory=None):

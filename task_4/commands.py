@@ -1,4 +1,4 @@
-from storage import add_contact, change_contact, show_phone, show_all
+from .storage import add_contact, change_contact, show_phone, show_all
 
 
 def execute_command(command, args):

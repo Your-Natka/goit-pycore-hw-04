@@ -1,6 +1,5 @@
 contacts = {}
 
-
 def add_contact(name, phone):
     """
     Додає новий контакт.

@@ -1,8 +1,9 @@
-from task_1.Salary.salary_utils import total_salary
+from pathlib import Path
+from salary_utils import total_salary
 
 if __name__ == "__main__":
     # Шлях до файлу із зарплатами
-    salary_file = "salary_file.txt"
+    salary_file = Path(__file__).parent / "salary_file.txt"
     total, average = total_salary(salary_file)
     
     # Перевірка результатів

@@ -6,7 +6,7 @@ def parse_cats_data(decoded_content):
     for line in decoded_content.splitlines():
         try:
             cat_id, name, age = line.strip().split(',')
-            cats_info.append({"id": cat_id, "name": name, "age": int(age)})
+            cats_info.append({"id": cat_id, "name": name, "age": age})
         except ValueError:
             print(f"Помилка у форматі даних в рядку: {line.strip()}")
     return cats_info
